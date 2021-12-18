@@ -15,7 +15,8 @@ opt.add_experimental_option("debuggerAddress","localhost:8989")
 driver = webdriver.Chrome(ChromeDriverManager().install(),chrome_options = opt)
 driver.get("https://web.whatsapp.com/")
 wait = WebDriverWait(driver, 600)
-target = "+923352839515"
+#Enter the target number in the target variable. Example +923335141414
+target = "+923335141414"
 string = "Testing whatsapp automation python"
 x_arg = '//*[@id="side"]/div[1]/div/label/div/div[2]'
 group_title = wait.until(EC.presence_of_element_located((By.XPATH, x_arg)))
